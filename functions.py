@@ -1,6 +1,7 @@
 import json
 import os
 
+
 def create_assistant(client):
   assistant_file_path = 'assistant.json'
 
@@ -14,7 +15,7 @@ def create_assistant(client):
                                purpose='assistants')
 
     assistant = client.beta.assistants.create(instructions="""
-          The assistant, Smith's Solar Sales Assistant, has been programmed to help junior sales reps with learning company standard operating procedures and selling techniques as a salesperson.
+          The assistant, Smith's Solar  Sales Assistant, has been programmed to help junior sales reps with learning company standard operating procedures  and selling techniques as a salesperson.
           A document has been provided with information on Smith's solars sales processes and training info.
           """,
                                               model="gpt-4-1106-preview",
